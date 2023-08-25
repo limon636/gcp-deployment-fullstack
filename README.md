@@ -30,12 +30,15 @@ Install all required service like Nginx, NodeJS, Git and MySQL Server.
 Following Command Line will make proxy server to use..
 
 `sudo apt-get update`
+
 `sudo apt install nginx`
 
 Update nginx.conf file
+
 `sudo vi /etc/nginx/nginx.conf`
 
 `
+
 events { # empty placeholder
 }
 
@@ -63,7 +66,8 @@ http {
         server 10.20.0.5:9000;
     }
 
-}`
+}
+`
 
 `sudo nginx -s reload`
 
@@ -137,6 +141,7 @@ Use following command
 `sudo apt-get install -y mysql.server`
 
 `sudo vi /etc/mysql/mariadb.conf.d/50-server.cnf`
+
 `bind-address = 0.0.0.0`
 
 `sudo service mysql restart`
@@ -144,9 +149,11 @@ Use following command
 `mysql -u root -p mysql`
 
 For MariaDB
+
 `ALTER USER 'root'@'localhost' IDENTIFIED VIA mysql_native_password USING PASSWORD('root');`
 
 For MySQL
+
 `ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';`
 
 `CREATE USER 'root'@'%' IDENTIFIED BY 'password';`
@@ -161,7 +168,8 @@ For MySQL
 
 `use gcp;`
 
-`CREATE TABLE`users`(
+`
+CREATE TABLE`users`(
  `id`int NOT NULL AUTO_INCREMENT,
  `first_name`varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
  `last_name`varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -169,4 +177,5 @@ For MySQL
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 `
+
 **Yeah, thats it!**
