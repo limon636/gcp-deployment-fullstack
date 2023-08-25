@@ -5,7 +5,7 @@
 We deploy a pure microservice architecture model at Google Cloude Platform (GCP). We'll use Single VPC and Five VM, Each VM will will different purposes. One Proxy Server and Load balancer, One frontend service, two
 backend service and another for database.
 
-![Microservice Application Deployment at GCP](https://github.com/limon636/gcp-deployment-fullstack/blob/main/gcp-fullstack.png?raw=true)
+![Microservice Application Deployment at GCP](https://github.com/limon636/gcp-deployment-fullstack/blob/main/img/gcp-fullstack.png?raw=true)
 
 ## Technologies
 
