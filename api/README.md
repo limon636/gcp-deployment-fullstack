@@ -34,8 +34,8 @@
 You can try it out yourself by cloning the repository and following the instructions below.
 
 ```bash
-git clone https://github.com/titocbd/microservice-react-nestjs-at-gcp.git
-cd microservice-react-nestjs-at-gcp/backend
+git clone https://github.com/limon636/gcp-deployment-fullstack.git
+cd gcp-deployment-fullstack/backend
 ```
 
 ## Installation
